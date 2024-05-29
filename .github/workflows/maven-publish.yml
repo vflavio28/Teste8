@@ -21,5 +21,8 @@ jobs:
         java-version: '22'
         distribution: 'temurin'
 
+    - name: Change to project directory
+      run: cd Teste8
+
     - name: Build with Maven
-      run: mvn -f Teste8/pom.xml clean install
+      run: mvn clean install
